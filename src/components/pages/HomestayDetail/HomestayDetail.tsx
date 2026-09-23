@@ -6,17 +6,19 @@ import { Badge } from '../../atoms/Badge';
 import { Rating } from '../../atoms/Rating';
 import { Price } from '../../atoms/Price';
 import { Skeleton } from '../../atoms/Skeleton';
+import { MapView } from '../../organisms/MapView';
 import type { HomestayDetailProps, HomestayData, DateRange } from './HomestayDetailProps';
 
 // Default homestay data
 const defaultHomestay: HomestayData = {
 	id: '1',
-	title: 'Peaceful Cottage in Netarhat',
-	location: 'Netarhat, Jharkhand',
-	address: 'Village Kuru, Near Netarhat Hill, Latehar District, Jharkhand 829209',
-	description: `Experience the tranquility of Jharkhand's "Queen of Chotanagpur" at our cozy cottage nestled in the hills of Netarhat. Wake up to breathtaking sunrise views over the valleys and spend your days exploring pristine forests, waterfalls, and tribal villages.
+	title: 'Lakeside Homestay near Loktak',
+	location: 'Moirang, Manipur',
+	address: 'Near Loktak Lake, Bishnupur District, Manipur 795133',
+	coordinates: { lat: 24.552, lng: 93.786 },
+	description: `Experience the calm beauty of Manipur at our cozy homestay near Loktak Lake. Wake up to soft morning light over the water and spend your days exploring floating islands, forest paths, and nearby villages.
 
-Our homestay offers an authentic glimpse into rural Jharkhand life while providing all modern comforts. The cottage features locally crafted furniture, traditional Jharkhand textiles, and artwork by tribal artisans.
+Our homestay offers an authentic glimpse into local life while providing all modern comforts. The rooms feature locally crafted furniture, traditional Manipuri textiles, and artwork by regional artisans.
 
 Perfect for nature lovers, photographers, and anyone seeking a peaceful retreat away from city life. Our family has been hosting guests for over 15 years and we take pride in sharing our culture and cuisine with visitors from around the world.`,
 	images: [
@@ -40,7 +42,7 @@ Perfect for nature lovers, photographers, and anyone seeking a peaceful retreat 
 		memberSince: '2019',
 		responseRate: 98,
 		responseTime: 'within an hour',
-		bio: 'Born and raised in Netarhat, I love sharing the beauty of my homeland with visitors. I work as a forest guide and know all the best spots for sunrise views and wildlife spotting.',
+		bio: 'Born and raised near Loktak Lake, I love sharing the beauty of my homeland with visitors. I know the best spots for sunrise views, local food, and quiet nature walks.',
 	},
 	amenities: [
 		{ id: 'wifi', label: 'WiFi', icon: 'wifi', category: 'basic' },
@@ -311,6 +313,25 @@ export const HomestayDetail = ({
 						</div>
 
 						<div className="divider" />
+
+						{/* Exact homestay location */}
+						{homestay.coordinates && (
+							<div>
+								<h2 className="font-heading font-semibold text-xl mb-4">Where you will stay</h2>
+								<p className="text-sm text-base-content/60 mb-4">{homestay.address || homestay.location}</p>
+								<MapView
+									center={homestay.coordinates}
+									locationName={homestay.location}
+									markers={[{
+										id: homestay.id,
+										lat: homestay.coordinates.lat,
+										lng: homestay.coordinates.lng,
+										title: homestay.title,
+									}]}
+									height="360px"
+								/>
+							</div>
+						)}
 
 						{/* Description */}
 						<div>

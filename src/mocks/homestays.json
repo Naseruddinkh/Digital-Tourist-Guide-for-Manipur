@@ -2,17 +2,15 @@
   "data": [
     {
       "id": "hs-001",
-      "title": "Peaceful Cottage in Netarhat",
-      "description": "A serene cottage nestled in the hills of Netarhat, offering breathtaking views of the sunrise. Perfect for nature lovers seeking tranquility.",
-      "location": "Netarhat, Latehar",
-      "district": "Latehar",
+      "title": "Iranyai Homestay",
+      "description": "A welcoming Imphal stay with modern amenities and easy access to local culture and city attractions.",
+      "location": "Babupara, Imphal",
+      "district": "Imphal West",
       "price": 2500,
       "rating": 4.8,
       "reviewCount": 124,
       "images": [
-        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800",
-        "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800",
-        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800"
+        "https://wanderon-images.gumlet.io/blogs/new/2024/06/iranyai-homestay.jpg?auto=compress%2Cformat&w=800"
       ],
       "amenities": ["wifi", "parking", "kitchen", "heating", "garden"],
       "hostId": "host-001",
@@ -35,16 +33,15 @@
     },
     {
       "id": "hs-002",
-      "title": "Tribal Heritage Homestay",
-      "description": "Experience authentic tribal culture in this traditional Santhali home. Enjoy local cuisine, folk music, and warm hospitality.",
-      "location": "Rajmahal, Godda",
-      "district": "Godda",
+      "title": "John's Home Stay",
+      "description": "A peaceful family homestay in Imphal with a garden, private entrance, WiFi, and local hospitality.",
+      "location": "Chingmeirong, Imphal",
+      "district": "Imphal West",
       "price": 1800,
       "rating": 4.9,
       "reviewCount": 89,
       "images": [
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+        "https://wanderon-images.gumlet.io/blogs/new/2024/06/johns-home-home-stay-1.jpg?auto=compress%2Cformat&w=800"
       ],
       "amenities": ["parking", "kitchen", "garden", "cultural-activities"],
       "hostId": "host-002",
@@ -67,16 +64,15 @@
     },
     {
       "id": "hs-003",
-      "title": "Forest Edge Retreat near Betla",
-      "description": "Stay at the edge of Betla National Park and wake up to the sounds of wildlife. Perfect base for jungle safaris.",
-      "location": "Betla, Latehar",
-      "district": "Latehar",
+      "title": "Aheibam HomeStay",
+      "description": "A serene local stay with a garden, shared lounge, breakfast, and easy access to Imphal attractions.",
+      "location": "Iroishemba, Imphal",
+      "district": "Imphal West",
       "price": 3500,
       "rating": 4.7,
       "reviewCount": 156,
       "images": [
-        "https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=800",
-        "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800"
+        "https://wanderon-images.gumlet.io/blogs/new/2024/06/aheibam-homestay.jpg?auto=compress%2Cformat&w=800"
       ],
       "amenities": ["wifi", "parking", "kitchen", "ac", "wildlife-viewing"],
       "hostId": "host-003",
@@ -99,16 +95,15 @@
     },
     {
       "id": "hs-004",
-      "title": "Waterfall View Villa",
-      "description": "A beautiful villa with stunning views of Hundru Falls. Perfect for family vacations and romantic getaways.",
-      "location": "Hundru Falls, Ranchi",
-      "district": "Ranchi",
+      "title": "Hearth of Imphal",
+      "description": "A heritage-style stay with a peaceful garden, breakfast, WiFi, and mountain-view rooms.",
+      "location": "Chingmeirong, Imphal",
+      "district": "Imphal West",
       "price": 4200,
       "rating": 4.6,
       "reviewCount": 78,
       "images": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800"
+        "https://wanderon-images.gumlet.io/blogs/new/2024/06/hearth-of-imphal.jpg?auto=compress%2Cformat&w=800"
       ],
       "amenities": ["wifi", "parking", "kitchen", "ac", "swimming-pool", "waterfall-view"],
       "hostId": "host-004",
@@ -131,16 +126,15 @@
     },
     {
       "id": "hs-005",
-      "title": "Lakeside Cottage at Patratu",
-      "description": "Charming cottage overlooking Patratu Valley Lake. Enjoy boating, fishing, and spectacular sunsets.",
-      "location": "Patratu, Ramgarh",
-      "district": "Ramgarh",
+      "title": "Yum & Hill Cottage",
+      "description": "A quiet cottage surrounded by greenery with WiFi, breakfast, parking, and a relaxed local atmosphere.",
+      "location": "Luwangsangbam, Imphal",
+      "district": "Imphal East",
       "price": 2800,
       "rating": 4.5,
       "reviewCount": 92,
       "images": [
-        "https://images.unsplash.com/photo-1505916349660-8d91a99c3e23?w=800",
-        "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800"
+        "https://wanderon-images.gumlet.io/blogs/new/2024/06/yum-hill-cottage.jpg?auto=compress%2Cformat&w=800"
       ],
       "amenities": ["wifi", "parking", "kitchen", "lake-access", "boating"],
       "hostId": "host-005",
@@ -163,16 +157,16 @@
     },
     {
       "id": "hs-006",
-      "title": "Temple Town Stay in Deoghar",
-      "description": "Comfortable homestay near Baidyanath Temple. Ideal for pilgrims and spiritual seekers.",
-      "location": "Deoghar",
-      "district": "Deoghar",
+      "title": "Keibul Homestay at Loktak Lake",
+      "description": "A floating homestay on Loktak Lake with boat transfers, traditional food, fishing, and views of the phumdis.",
+      "location": "Loktak Lake, Moirang",
+      "district": "Bishnupur",
       "price": 1500,
       "rating": 4.4,
       "reviewCount": 203,
       "images": [
-        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
-        "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800"
+        "https://www.homestaysofindia.com/wp-content/uploads/2020/03/Aerial-View-Keibul-Homestay-Loktak.jpeg",
+        "https://www.homestaysofindia.com/wp-content/uploads/2020/03/Keibul-Homestay-Loktak.jpg"
       ],
       "amenities": ["wifi", "ac", "kitchen", "temple-proximity"],
       "hostId": "host-006",
@@ -195,16 +189,15 @@
     },
     {
       "id": "hs-007",
-      "title": "Hill Top Farm Stay",
-      "description": "Organic farm stay on a hilltop with panoramic views. Experience rural life with farm-to-table meals.",
-      "location": "Hazaribagh",
-      "district": "Hazaribagh",
+      "title": "Shirui Hills View Homestay",
+      "description": "A peaceful hill stay near Ukhrul, ideal for nature walks, local food, and Shirui Lily experiences.",
+      "location": "Shirui, Ukhrul",
+      "district": "Ukhrul",
       "price": 2200,
       "rating": 4.8,
       "reviewCount": 67,
       "images": [
-        "https://images.unsplash.com/photo-1595521624992-48a59aef95e3?w=800",
-        "https://images.unsplash.com/photo-1581888227599-779811939961?w=800"
+        "https://wanderon-images.gumlet.io/blogs/new/2024/06/yum-hill-cottage.jpg?auto=compress%2Cformat&w=800"
       ],
       "amenities": ["parking", "kitchen", "garden", "farm-activities", "organic-food"],
       "hostId": "host-007",
@@ -227,16 +220,15 @@
     },
     {
       "id": "hs-008",
-      "title": "Colonial Bungalow in Ranchi",
-      "description": "Historic colonial-era bungalow with modern amenities. Perfect blend of heritage and comfort.",
-      "location": "Ranchi Cantonment, Ranchi",
-      "district": "Ranchi",
+      "title": "Imphal Local Family Home",
+      "description": "A comfortable local home in Imphal for travellers seeking a warm stay close to markets and heritage sites.",
+      "location": "Thangmeiband, Imphal",
+      "district": "Imphal West",
       "price": 5500,
       "rating": 4.9,
       "reviewCount": 45,
       "images": [
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800"
+        "https://wanderon-images.gumlet.io/blogs/new/2024/06/johns-home-home-stay-1.jpg?auto=compress%2Cformat&w=800"
       ],
       "amenities": ["wifi", "parking", "kitchen", "ac", "garden", "heritage"],
       "hostId": "host-008",

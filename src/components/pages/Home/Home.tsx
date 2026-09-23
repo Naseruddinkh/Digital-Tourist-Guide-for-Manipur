@@ -34,7 +34,7 @@ const fallbackHomestays: Omit<ListingCardProps, 'isSaved' | 'onSave'>[] = [
 		type: 'homestay',
 		title: 'Peaceful Cottage in Netarhat',
 		image: 'https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=400&h=300&fit=crop',
-		location: 'Netarhat, Jharkhand',
+		location: 'Loktak Lake, Manipur',
 		rating: 4.8,
 		reviewCount: 24,
 		price: 2500,
@@ -44,9 +44,9 @@ const fallbackHomestays: Omit<ListingCardProps, 'isSaved' | 'onSave'>[] = [
 	{
 		id: '2',
 		type: 'homestay',
-		title: 'Forest View Lodge at Betla',
+		title: 'Floating Cottage at Loktak',
 		image: 'https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=400&h=300&fit=crop',
-		location: 'Betla, Jharkhand',
+		location: 'Moirang, Manipur',
 		rating: 4.6,
 		reviewCount: 18,
 		price: 1800,
@@ -57,7 +57,7 @@ const fallbackHomestays: Omit<ListingCardProps, 'isSaved' | 'onSave'>[] = [
 		type: 'homestay',
 		title: 'Tribal Heritage Home',
 		image: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=400&h=300&fit=crop',
-		location: 'Ranchi, Jharkhand',
+		location: 'Imphal, Manipur',
 		rating: 4.9,
 		reviewCount: 42,
 		price: 3200,
@@ -69,7 +69,7 @@ const fallbackHomestays: Omit<ListingCardProps, 'isSaved' | 'onSave'>[] = [
 		type: 'homestay',
 		title: 'Waterfall Retreat Cottage',
 		image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=400&h=300&fit=crop',
-		location: 'Hundru Falls, Jharkhand',
+		location: 'Ukhrul, Manipur',
 		rating: 4.7,
 		reviewCount: 31,
 		price: 2200,
@@ -81,31 +81,31 @@ const fallbackHomestays: Omit<ListingCardProps, 'isSaved' | 'onSave'>[] = [
 const defaultDestinations: Destination[] = [
 	{
 		id: '1',
-		name: 'Netarhat',
+		name: 'Loktak Lake',
 		image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop',
 		listingCount: 24,
 	},
 	{
 		id: '2',
-		name: 'Betla National Park',
+		name: 'Kangla Fort',
 		image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop',
 		listingCount: 18,
 	},
 	{
 		id: '3',
-		name: 'Ranchi',
+		name: 'Imphal',
 		image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop',
 		listingCount: 45,
 	},
 	{
 		id: '4',
-		name: 'Hundru Falls',
+		name: 'Shirui Hills',
 		image: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=400&h=300&fit=crop',
 		listingCount: 12,
 	},
 	{
 		id: '5',
-		name: 'Jamshedpur',
+		name: 'Andro',
 		image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&h=300&fit=crop',
 		listingCount: 32,
 	},
@@ -125,7 +125,7 @@ const defaultTestimonials: Testimonial[] = [
 		id: '2',
 		name: 'Rahul Verma',
 		avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
-		text: 'Our guide at Betla was fantastic. He knew every trail and helped us spot tigers! Highly recommend using this platform.',
+		text: 'Our guide around Loktak Lake made the journey unforgettable. The floating islands and local stories were incredible.',
 		rating: 5,
 		location: 'Mumbai',
 	},
@@ -176,7 +176,7 @@ const howItWorks = [
 	{
 		step: 1,
 		title: 'Discover',
-		description: 'Browse homestays, guides, and authentic tribal handicrafts from across Jharkhand',
+		description: 'Browse homestays, guides, and authentic Manipuri handicrafts from across the state',
 		icon: 'explore',
 	},
 	{
@@ -232,10 +232,10 @@ export const Home = ({
 				<div className="container mx-auto px-4">
 					<div className="text-center mb-8">
 						<h2 className="font-heading text-2xl md:text-3xl font-bold mb-2">
-							Explore Jharkhand
+							Explore Manipur
 						</h2>
 						<p className="text-base-content/60 max-w-2xl mx-auto">
-							Discover the rich tribal heritage, pristine nature, and warm hospitality of Jharkhand
+							Discover vibrant culture, serene landscapes, and warm hospitality across Manipur
 						</p>
 					</div>
 
@@ -270,7 +270,7 @@ export const Home = ({
 								Popular Destinations
 							</h2>
 							<p className="text-base-content/60">
-								Explore the most visited places in Jharkhand
+								Explore the most visited places in Manipur
 							</p>
 						</div>
 						<Button style="ghost" className="hidden md:flex">
@@ -315,7 +315,7 @@ export const Home = ({
 							How It Works
 						</h2>
 						<p className="text-base-content/60 max-w-2xl mx-auto">
-							Your journey to authentic Jharkhand experiences in three simple steps
+							Your journey to authentic Manipur experiences in three simple steps
 						</p>
 					</div>
 

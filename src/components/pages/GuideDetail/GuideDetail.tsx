@@ -14,17 +14,17 @@ const mockGuide = {
 	name: 'Ravi Kumar',
 	photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
 	title: 'Wildlife Expert & Naturalist',
-	location: 'Betla National Park, Jharkhand',
-	languages: ['Hindi', 'English', 'Mundari'],
+	location: 'Loktak Lake, Manipur',
+	languages: ['Manipuri', 'Hindi', 'English'],
 	experience: '12 years',
 	rating: 4.9,
 	reviewCount: 67,
 	pricePerDay: 1500,
-	about: `I am a certified wildlife guide with over 12 years of experience in Betla National Park. Growing up in the forests of Jharkhand, I developed a deep connection with nature and wildlife from an early age.
+	about: `I am a certified nature guide with over 12 years of experience around Loktak Lake. Growing up in Manipur, I developed a deep connection with its lakes, hills, and wildlife from an early age.
 
 My expertise includes wildlife tracking, bird watching, and sharing knowledge about the local tribal culture and traditions. I have guided thousands of tourists through the pristine forests of Palamu Tiger Reserve, helping them spot tigers, elephants, leopards, and over 200 species of birds.
 
-I believe in sustainable tourism that benefits both visitors and local communities. Every tour I conduct includes interactions with local tribal villages, giving tourists an authentic glimpse into the rich cultural heritage of Jharkhand.`,
+I believe in sustainable tourism that benefits both visitors and local communities. Every tour I conduct includes local stories, traditional food, and an authentic glimpse into Manipur's rich cultural heritage.`,
 	specializations: [
 		{ icon: 'pets', label: 'Wildlife Tracking' },
 		{ icon: 'forest', label: 'Nature Walks' },
@@ -35,10 +35,10 @@ I believe in sustainable tourism that benefits both visitors and local communiti
 	tours: [
 		{
 			id: '1',
-			title: 'Betla Wildlife Safari',
+			title: 'Loktak Lake Nature Tour',
 			duration: '1 day',
 			price: 1500,
-			description: 'Full day safari in Betla National Park with wildlife spotting and bird watching.',
+			description: 'Full day exploration of Loktak Lake with bird watching and local landscape walks.',
 		},
 		{
 			id: '2',

@@ -15,6 +15,7 @@ export const ListingCard = ({
 	type,
 	title,
 	image,
+	fallbackImage,
 	location,
 	rating,
 	reviewCount,
@@ -54,12 +55,19 @@ export const ListingCard = ({
 			aria-label={buildAriaLabel()}
 		>
 			{/* Image container */}
-			<figure className="relative aspect-[4/3] overflow-hidden">
+			<figure className="relative aspect-[4/3] overflow-hidden bg-base-200">
 				<img
 					src={image}
 					alt={title}
 					loading="lazy"
 					className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+					onError={(e) => {
+						const target = e.currentTarget;
+						if (!target.dataset.hasFallback && fallbackImage) {
+							target.dataset.hasFallback = 'true';
+							target.src = fallbackImage;
+						}
+					}}
 				/>
 
 				{/* Save button */}

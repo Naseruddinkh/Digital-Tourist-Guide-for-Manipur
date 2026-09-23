@@ -12,7 +12,9 @@ import { Homestays } from './components/pages/Homestays';
 import { HomestayDetail } from './components/pages/HomestayDetail';
 import { Search } from './components/pages/Search';
 import { GuideDetail } from './components/pages/GuideDetail';
+import { Guides } from './components/pages/Guides';
 import { ProductDetail } from './components/pages/ProductDetail';
+import { Marketplace } from './components/pages/Marketplace';
 import { Login } from './components/pages/Login';
 import { Register } from './components/pages/Register';
 import { Booking } from './components/pages/Booking';
@@ -42,8 +44,10 @@ const App = () => {
 				<Route path="homestays" element={<Homestays />} />
 				<Route path="homestays/:homestayId" element={<HomestayDetail />} />
 				<Route path="search" element={<Search />} />
+				<Route path="guides" element={<Guides />} />
 				<Route path="guides/:guideId" element={<GuideDetail />} />
 				<Route path="products/:productId" element={<ProductDetail />} />
+				<Route path="marketplace" element={<Marketplace />} />
 				<Route path="*" element={<NotFound />} />
 			</Route>
 

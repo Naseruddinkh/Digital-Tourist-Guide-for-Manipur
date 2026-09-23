@@ -2,8 +2,8 @@ import { Icon } from '../../atoms/Icon';
 import { Price } from '../../atoms/Price';
 import type { MapViewProps, MapMarker } from './MapViewProps';
 
-// Default center (Ranchi, Jharkhand)
-const DEFAULT_CENTER = { lat: 23.3441, lng: 85.3096 };
+// Default center (Imphal, Manipur)
+const DEFAULT_CENTER = { lat: 24.817, lng: 93.9368 };
 
 /**
  * Generate OpenStreetMap embed URL

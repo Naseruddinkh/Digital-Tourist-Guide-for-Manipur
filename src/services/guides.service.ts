@@ -49,6 +49,10 @@ interface RawGuide {
 	verified: boolean;
 	responseRate: number;
 	responseTime: string;
+	coordinates?: {
+		lat: number;
+		lng: number;
+	};
 }
 
 /**
@@ -80,6 +84,7 @@ function normalizeGuide(raw: RawGuide, index: number = 0): Guide {
 		verified: raw.verified,
 		responseRate: raw.responseRate,
 		responseTime: raw.responseTime,
+		coordinates: raw.coordinates,
 	};
 }
 

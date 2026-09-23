@@ -65,6 +65,8 @@ export interface ListingCardProps {
 	title: string;
 	/** Main image URL */
 	image: string;
+	/** Fallback image URL if primary fails to load */
+	fallbackImage?: string;
 	/** Location text (optional for products) */
 	location?: string;
 	/** Rating value (1-5) */

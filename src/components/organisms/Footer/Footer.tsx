@@ -21,8 +21,8 @@ export const Footer = ({
 	// Footer link sections (implemented flag indicates if route exists)
 	const exploreLinks = [
 		{ label: 'Homestays', href: '/homestays', implemented: true },
-		{ label: 'Local Guides', href: '/guides', implemented: false },
-		{ label: 'Marketplace', href: '/marketplace', implemented: false },
+		{ label: 'Local Guides', href: '/guides', implemented: true },
+		{ label: 'Marketplace', href: '/marketplace', implemented: true },
 		{ label: 'Destinations', href: '/destinations', implemented: false },
 		{ label: 'Experiences', href: '/experiences', implemented: false },
 	];

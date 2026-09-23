@@ -9,9 +9,9 @@ import type { CheckoutProps, PaymentDetails } from './CheckoutProps';
 // Mock booking data - in a real app, this would come from state or URL params
 const mockBooking = {
 	homestay: {
-		title: 'Peaceful Cottage in Netarhat',
+		title: 'Lakeside Homestay near Loktak',
 		image: 'https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=400&h=300&fit=crop',
-		location: 'Netarhat, Jharkhand',
+		location: 'Moirang, Manipur',
 	},
 	checkIn: '2025-01-15',
 	checkOut: '2025-01-18',

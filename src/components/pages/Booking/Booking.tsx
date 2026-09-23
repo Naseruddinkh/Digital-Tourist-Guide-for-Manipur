@@ -9,9 +9,9 @@ import type { BookingProps, BookingDetails } from './BookingProps';
 // Mock homestay data - in a real app, this would come from an API or state
 const mockHomestay = {
 	id: '1',
-	title: 'Peaceful Cottage in Netarhat',
+	title: 'Lakeside Homestay near Loktak',
 	image: 'https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=400&h=300&fit=crop',
-	location: 'Netarhat, Jharkhand',
+	location: 'Moirang, Manipur',
 	rating: 4.8,
 	reviewCount: 24,
 	pricePerNight: 2500,

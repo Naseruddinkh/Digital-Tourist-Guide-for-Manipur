@@ -2,6 +2,7 @@ import 'dotenv/config';
 import bcrypt from 'bcryptjs';
 import { connectDB } from '../src/config/db.js';
 import { User, Listing, Event, Emergency, Transport, Booking, Review } from '../src/models/index.js';
+import { guideListings } from './guide.js';
 
 const img=(q)=>`https://images.unsplash.com/${q}?auto=format&fit=crop&w=1200&q=80`;
 
@@ -13,7 +14,6 @@ const listings=[
  {type:'homestay',title:'Loktak Lakeside Homestay',description:'Family-run stay close to Loktak Lake with local food and village experiences.',district:'Bishnupur',location:'Moirang',price:1800,priceUnit:'night',categories:['homestay'],amenities:['Wi-Fi','Breakfast','Parking','Local food'],featured:true,hostName:'Thangjam Family',capacity:{guests:4,bedrooms:2,beds:3,bathrooms:1},propertyType:'private',minStay:1,maxStay:7,houseRules:['No smoking indoors'],coordinates:{lat:24.552,lng:93.786},images:[img('photo-1564013799919-ab600027ffc6')],rating:4.6,reviewCount:42,verified:true},
  {type:'hotel',title:'Imphal Heritage Hotel',description:'Comfortable city accommodation with easy access to markets and heritage attractions.',district:'Imphal West',location:'Imphal',price:3200,priceUnit:'night',categories:['hotel'],amenities:['Wi-Fi','Restaurant','Parking','24-hour reception'],featured:true,capacity:{guests:3,bedrooms:1,beds:2,bathrooms:1},propertyType:'entire',coordinates:{lat:24.817,lng:93.936},images:[img('photo-1566073771259-6a8506099945')],rating:4.4,reviewCount:55,verified:true},
  {type:'restaurant',title:'Meitei Kitchen',description:'Local cuisine featuring traditional Manipuri dishes and seasonal ingredients.',district:'Imphal West',location:'Imphal',price:500,priceUnit:'person',categories:['Manipuri','local cuisine'],tags:['eroomba','singju','chak-hao'],featured:true,coordinates:{lat:24.814,lng:93.94},images:[img('photo-1515003197210-e0cd71810b5f')],rating:4.6,reviewCount:93,phone:'+91-0000000000'},
- {type:'guide',title:'Manipur Culture & Nature Guide',description:'Local guide offering heritage walks, food trails and nature trips across Manipur.',district:'Imphal West',location:'Imphal',languages:['English','Hindi','Meitei'],specializations:['Heritage','Food','Nature'],experience:8,pricePerDay:1800,responseRate:96,responseTime:'Within 1 hour',verified:true,featured:true,tours:[{id:'culture-walk',title:'Imphal Heritage Walk',description:'Kangla and nearby cultural sites.',duration:'4 hours',price:900,includes:['Local guide','History briefing']}],coordinates:{lat:24.817,lng:93.936},images:[img('photo-1507003211169-0a1dd7228f8d')],rating:4.9,reviewCount:61},
  {type:'shopping',title:'Authentic Manipuri Handloom',description:'Handwoven textiles and local craft products from artisan communities.',district:'Imphal East',location:'Imphal',price:1200,priceUnit:'item',categories:['handloom','handicraft'],materials:['Cotton','Natural dyes'],craftStory:'Traditional weaving knowledge passed through generations.',inStock:true,featured:true,artisan:{id:'artisan-1',name:'Local Artisan Collective',location:'Imphal East'},images:[img('photo-1606722590583-6951b5ea92ad')],rating:4.7,reviewCount:37},
  {type:'transport',title:'Airport Transfer',description:'Pre-bookable transfer between Imphal airport and major tourist areas.',district:'Imphal West',location:'Imphal Airport',price:800,priceUnit:'trip',categories:['taxi','airport'],tags:['airport','taxi'],coordinates:{lat:24.76,lng:93.896},images:[img('photo-1549317661-bd32c8ce0db2')],rating:4.5,reviewCount:18}
 ];
@@ -64,8 +64,8 @@ const providerListingTitles = new Set([
   'Manipur Culture & Nature Guide'
 ]);
 
-const created = await Listing.insertMany(
-  listings.map(x => ({
+  const created = await Listing.insertMany(
+  [...listings, ...guideListings].map(x => ({
     ...x,
     hostId: providerListingTitles.has(x.title)
       ? provider._id

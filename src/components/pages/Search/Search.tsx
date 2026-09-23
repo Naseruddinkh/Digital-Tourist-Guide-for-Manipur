@@ -17,7 +17,7 @@ const mockResults: Omit<ListingCardProps, 'isSaved' | 'onSave'>[] = [
 		type: 'homestay',
 		title: 'Peaceful Cottage in Netarhat',
 		image: 'https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=400&h=300&fit=crop',
-		location: 'Netarhat, Jharkhand',
+		location: 'Loktak Lake, Manipur',
 		rating: 4.8,
 		reviewCount: 24,
 		price: 2500,
@@ -27,9 +27,9 @@ const mockResults: Omit<ListingCardProps, 'isSaved' | 'onSave'>[] = [
 	{
 		id: '2',
 		type: 'homestay',
-		title: 'Forest View Lodge at Betla',
+		title: 'Floating Cottage at Loktak',
 		image: 'https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=400&h=300&fit=crop',
-		location: 'Betla, Jharkhand',
+		location: 'Moirang, Manipur',
 		rating: 4.6,
 		reviewCount: 18,
 		price: 1800,
@@ -40,7 +40,7 @@ const mockResults: Omit<ListingCardProps, 'isSaved' | 'onSave'>[] = [
 		type: 'homestay',
 		title: 'Tribal Heritage Home',
 		image: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=400&h=300&fit=crop',
-		location: 'Ranchi, Jharkhand',
+		location: 'Imphal, Manipur',
 		rating: 4.9,
 		reviewCount: 42,
 		price: 3200,
@@ -52,7 +52,7 @@ const mockResults: Omit<ListingCardProps, 'isSaved' | 'onSave'>[] = [
 		type: 'guide',
 		title: 'Ravi Kumar - Wildlife Expert',
 		image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop',
-		location: 'Betla National Park',
+		location: 'Kangla Fort',
 		rating: 4.9,
 		reviewCount: 67,
 		price: 1500,
@@ -64,7 +64,7 @@ const mockResults: Omit<ListingCardProps, 'isSaved' | 'onSave'>[] = [
 		type: 'product',
 		title: 'Handwoven Tribal Basket',
 		image: 'https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&h=300&fit=crop',
-		location: 'Made in Ranchi',
+		location: 'Made in Manipur',
 		rating: 4.7,
 		reviewCount: 23,
 		price: 850,
@@ -159,7 +159,7 @@ export const Search = ({
 							) : (
 								<>
 									<h1 className="font-heading text-xl md:text-2xl font-bold">
-										Explore Jharkhand
+										Explore Manipur
 									</h1>
 									<p className="text-base-content/60 mt-1">
 										Discover homestays, guides, and tribal crafts
@@ -258,10 +258,10 @@ export const Search = ({
 										<Icon name="person" size="sm" />
 										Guides
 									</NotImplementedLink>
-									<NotImplementedLink feature="Marketplace" className="btn btn-outline btn-sm">
+									<Link to="/marketplace" className="btn btn-outline btn-sm">
 										<Icon name="storefront" size="sm" />
 										Marketplace
-									</NotImplementedLink>
+									</Link>
 								</div>
 							</div>
 						) : (

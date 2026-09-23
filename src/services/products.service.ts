@@ -20,8 +20,13 @@ const PRODUCT_PLACEHOLDER_IMAGES = [
  */
 function isValidImageUrl(url: string): boolean {
 	if (!url || typeof url !== 'string') return false;
-	const validDomains = ['unsplash.com', 'pexels.com', 'picsum.photos', 'placehold.co'];
-	return validDomains.some(domain => url.includes(domain));
+	if (url.startsWith('/') || url.startsWith('data:') || url.startsWith('blob:')) return true;
+	try {
+		const parsed = new URL(url);
+		return ['http:', 'https:'].includes(parsed.protocol);
+	} catch {
+		return false;
+	}
 }
 
 /**

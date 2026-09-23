@@ -2,7 +2,7 @@
 @plugin "daisyui";
 
 @plugin "daisyui/theme" {
-    name: "jharkhand";
+    name: "manipur";
     default: true;
     prefersdark: false;
     color-scheme: "dark";
@@ -10,17 +10,17 @@
     --color-base-200: oklch(95% 0.015 75);
     --color-base-300: oklch(90% 0.02 70);
     --color-base-content: oklch(25% 0.02 50);
-    --color-primary: oklch(55% 0.18 25);
-    --color-primary-content: oklch(98% 0.01 25);
-    --color-secondary: oklch(75% 0.16 70);
-    --color-secondary-content: oklch(25% 0.05 70);
-    --color-accent: oklch(50% 0.14 145);
-    --color-accent-content: oklch(98% 0.01 145);
-    --color-neutral: oklch(30% 0.02 50);
-    --color-neutral-content: oklch(95% 0.01 50);
+    --color-primary: oklch(48% 0.14 155);
+    --color-primary-content: oklch(98% 0.01 155);
+    --color-secondary: oklch(62% 0.14 215);
+    --color-secondary-content: oklch(98% 0.01 215);
+    --color-accent: oklch(75% 0.16 75);
+    --color-accent-content: oklch(25% 0.05 75);
+    --color-neutral: oklch(28% 0.03 155);
+    --color-neutral-content: oklch(96% 0.01 155);
     --color-info: oklch(62% 0.15 245);
     --color-info-content: oklch(98% 0 0);
-    --color-success: oklch(65% 0.18 145);
+    --color-success: oklch(62% 0.16 155);
     --color-success-content: oklch(20% 0.05 145);
     --color-warning: oklch(80% 0.15 85);
     --color-warning-content: oklch(25% 0.05 85);

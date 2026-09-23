@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router';
 import { Icon } from '../../atoms/Icon';
 import { Button } from '../../atoms/Button';
@@ -7,6 +7,7 @@ import { Rating } from '../../atoms/Rating';
 import { Avatar } from '../../atoms/Avatar';
 import { ReviewCard } from '../../molecules/ReviewCard';
 import { NotImplementedLink } from '../../molecules/NotImplementedLink';
+import productsData from '../../../mocks/products.json';
 import type { ProductDetailProps } from './ProductDetailProps';
 
 // Mock product data - in a real app, this would come from an API
@@ -25,19 +26,19 @@ const mockProduct = {
 	category: 'Handicrafts',
 	inStock: true,
 	stockCount: 15,
-	description: 'This beautiful handwoven basket is crafted by skilled artisans from the Munda tribe of Jharkhand. Each piece is unique, showcasing traditional weaving patterns passed down through generations.\n\nMade from locally sourced bamboo and natural fibers, this basket is both functional and decorative. It can be used for storing fruits, vegetables, or as a beautiful home décor piece.\n\nThe intricate geometric patterns represent tribal motifs that tell stories of the forest, wildlife, and daily life of the Munda community.',
+	description: 'This beautiful handwoven basket is crafted by skilled artisans from Manipur. Each piece is unique, showcasing traditional weaving patterns passed down through generations.\n\nMade from locally sourced bamboo and natural fibers, this basket is both functional and decorative. It can be used for storing fruits, vegetables, or as a beautiful home décor piece.\n\nThe intricate patterns reflect Manipuri craft traditions and stories of community life.',
 	specifications: [
 		{ label: 'Material', value: 'Bamboo & Natural Fibers' },
 		{ label: 'Dimensions', value: '12" x 12" x 8"' },
 		{ label: 'Weight', value: '350g' },
-		{ label: 'Origin', value: 'Ranchi, Jharkhand' },
+		{ label: 'Origin', value: 'Imphal, Manipur' },
 		{ label: 'Craft Type', value: 'Handwoven' },
 	],
 	artisan: {
 		name: 'Sushila Devi',
 		photo: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=200&h=200&fit=crop',
 		tribe: 'Munda',
-		location: 'Ranchi, Jharkhand',
+		location: 'Imphal, Manipur',
 		experience: '25 years',
 		about: 'Sushila Devi is a master weaver from the Munda tribe with 25 years of experience. She learned the art of basket weaving from her grandmother and has been preserving this traditional craft while supporting her family.',
 	},
@@ -96,8 +97,48 @@ export const ProductDetail = ({
 	const [selectedImage, setSelectedImage] = useState(0);
 	const [quantity, setQuantity] = useState(1);
 
-	// In a real app, fetch product data based on productId
-	const product = mockProduct;
+	// Find product by id from productsData, or fallback to mockProduct
+	const foundProduct = productsData.data.find((p) => p.id === productId);
+	const product = useMemo(() => {
+		if (!foundProduct) return mockProduct;
+		return {
+			id: foundProduct.id,
+			title: foundProduct.title,
+			images: foundProduct.images,
+			price: foundProduct.price,
+			originalPrice: foundProduct.originalPrice,
+			rating: foundProduct.rating,
+			reviewCount: foundProduct.reviewCount,
+			category: foundProduct.category,
+			inStock: foundProduct.inStock,
+			stockCount: 15,
+			description: foundProduct.description,
+			specifications: [
+				{ label: 'Craft Type', value: foundProduct.category },
+				{ label: 'Materials', value: foundProduct.materials.join(', ') },
+				{ label: 'Dimensions', value: foundProduct.dimensions || 'Handcrafted standard size' },
+				{ label: 'Origin', value: `${foundProduct.artisan.location}, Manipur` },
+			],
+			artisan: {
+				name: foundProduct.artisan.name,
+				photo: foundProduct.artisan.avatar || 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=200&h=200&fit=crop',
+				tribe: 'Manipuri Artisan',
+				location: `${foundProduct.artisan.location}, Manipur`,
+				experience: '20+ years',
+				about: foundProduct.craftStory || 'Master artisan committed to sustaining Manipur’s rich craft legacy.',
+			},
+			relatedProducts: productsData.data
+				.filter((p) => p.id !== foundProduct.id)
+				.slice(0, 3)
+				.map((p) => ({
+					id: p.id,
+					title: p.title,
+					image: p.images[0],
+					price: p.price,
+				})),
+			reviews: mockProduct.reviews,
+		};
+	}, [foundProduct]);
 
 	const handleAddToCart = () => {
 		onAddToCart?.(productId || '', quantity);
@@ -124,7 +165,7 @@ export const ProductDetail = ({
 				<div className="breadcrumbs text-sm mb-6">
 					<ul>
 						<li><Link to="/">Home</Link></li>
-						<li><NotImplementedLink feature="Marketplace">Marketplace</NotImplementedLink></li>
+						<li><Link to="/marketplace" className="link link-hover">Marketplace</Link></li>
 						<li><NotImplementedLink feature={product.category}>{product.category}</NotImplementedLink></li>
 						<li>{product.title}</li>
 					</ul>
@@ -136,9 +177,16 @@ export const ProductDetail = ({
 					<div className="space-y-4">
 						<div className="aspect-[4/3] rounded-xl overflow-hidden bg-base-100">
 							<img
-								src={product.images[selectedImage]}
+								src={product.images[selectedImage] || product.images[0]}
 								alt={product.title}
 								className="w-full h-full object-cover"
+								onError={(e) => {
+									const img = e.currentTarget;
+									if (!img.dataset.hasFallback) {
+										img.dataset.hasFallback = 'true';
+										img.src = product.images[1] || '/images/products/handwoven_textile.jpg';
+									}
+								}}
 							/>
 						</div>
 						<div className="flex gap-3">
@@ -152,6 +200,13 @@ export const ProductDetail = ({
 										src={image}
 										alt={product.title + ' ' + (index + 1)}
 										className="w-full h-full object-cover"
+										onError={(e) => {
+											const img = e.currentTarget;
+											if (!img.dataset.hasFallback) {
+												img.dataset.hasFallback = 'true';
+												img.src = product.images[1] || '/images/products/handwoven_textile.jpg';
+											}
+										}}
 									/>
 								</button>
 							))}

@@ -3,8 +3,8 @@ import { Icon } from '../../atoms/Icon';
 import { SearchBar } from '../../molecules/SearchBar';
 import type { HeroProps } from './HeroProps';
 
-// Default Manipur landscape image (placeholder)
-const DEFAULT_BG = 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop';
+// Scenic travel image used when the homepage does not provide a custom background.
+const DEFAULT_BG = 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1920&h=1080&fit=crop';
 
 /**
  * Hero organism component for homepage hero section

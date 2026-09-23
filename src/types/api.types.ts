@@ -83,6 +83,10 @@ export interface Guide {
 	verified: boolean;
 	responseRate: number;
 	responseTime: string;
+	coordinates?: {
+		lat: number;
+		lng: number;
+	};
 }
 
 export interface Tour {

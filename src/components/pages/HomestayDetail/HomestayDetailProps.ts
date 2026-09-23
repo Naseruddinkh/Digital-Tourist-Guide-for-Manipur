@@ -75,6 +75,11 @@ export interface HomestayData {
 	location: string;
 	/** Full address */
 	address?: string;
+	/** Exact map coordinates for this homestay */
+	coordinates?: {
+		lat: number;
+		lng: number;
+	};
 	/** Description */
 	description: string;
 	/** Images array */

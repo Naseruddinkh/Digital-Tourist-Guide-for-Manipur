@@ -23,7 +23,7 @@ export default defineConfig(({ mode }) => ({
   // Add the React plugin to enable support for React and JSX/TSX
   react(), tailwindcss()],
   // Only use subdirectory base path in production (GitHub Pages)
-  base: mode === 'production' ? '/sih-2025-jharkhand-tourism/' : '/',
+  base: mode === 'production' ? '/sih-2025-one-manipur-tourism/' : '/',
   server: {
     host: true // Exposes the server on the local network
   },

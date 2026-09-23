@@ -1,6 +1,180 @@
 {
   "data": [
     {
+      "id": "prod-manipur-001",
+      "title": "Handwoven Manipuri Tribal Textile & Shawl",
+      "description": "Authentic handwoven tribal textile fabric featuring traditional Manipuri geometric motifs, rich natural dyes, and exquisite loin loom craftsmanship.",
+      "price": 3200,
+      "originalPrice": 4200,
+      "category": "Textiles",
+      "images": [
+        "https://imgs.search.brave.com/StOLIOS9JwJ4k9BTkwPNXZ2nTapg1LcxEFb5FWlwwBQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kMmhp/am9zMHIybTlyZi5j/bG91ZGZyb250Lm5l/dC91cGxvYWRzL2Js/b2dfaW1hZ2UvYmxv/Z19Ib3dUb0NyZWF0/ZUlubm92YXRpdmVQ/cm9kdWN0c1VzaW5n/TmFnYWxhbmRzSGFu/ZHdvdmVuLTQxMjEu/anBn",
+        "/images/products/handwoven_textile.jpg"
+      ],
+      "artisan": {
+        "id": "artisan-011",
+        "name": "Thoibi Chanu",
+        "location": "Ukhrul",
+        "avatar": "https://randomuser.me/api/portraits/women/31.jpg"
+      },
+      "rating": 4.9,
+      "reviewCount": 52,
+      "inStock": true,
+      "craftStory": "Handloom weaving is deeply rooted in Manipuri culture, woven with devotion on traditional loin looms. Each geometric pattern and border motif narrates sacred tribal folklore and generational resilience.",
+      "materials": ["Pure Cotton", "Organic Wool", "Natural Herbal Dyes"],
+      "dimensions": "72 x 36 inches"
+    },
+    {
+      "id": "prod-manipur-002",
+      "title": "Manipuri Bamboo Bottle & Haversack Baskets",
+      "description": "Traditional handcrafted bamboo water bottle container, haversack carrier, and open conical utility baskets. Made by indigenous artisans with seasoned golden bamboo.",
+      "price": 1450,
+      "originalPrice": 1800,
+      "category": "Bamboo Crafts",
+      "images": [
+        "https://imgs.search.brave.com/8NLGANW3xf-rG4ShJcBgrrwHJDxtnSx5HcLEUJWrdWI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5kaWFuZXR6b25l/LmNvbS9wdWJsaWMv/YWRtaW4vdXBsb2Fk/SW1hZ2UvMUJhbWJv/b19Cb3R0ZWxfSGF2/ZXJzYWNrX0Jhc2tl/dHNfX0JhbWJvb19C/YXNrZXRzLmpwZw",
+        "/images/products/bamboo_haversack_basket.jpg",
+        "https://www.indianetzone.com/public/admin/uploadImage/1Bamboo_Bottel_Haversack_Baskets__Bamboo_Baskets.jpg"
+      ],
+      "artisan": {
+        "id": "artisan-012",
+        "name": "Kamei Rongmei",
+        "location": "Tamenglong",
+        "avatar": "https://randomuser.me/api/portraits/men/32.jpg"
+      },
+      "rating": 4.8,
+      "reviewCount": 39,
+      "inStock": true,
+      "craftStory": "Bamboo bottles and haversack baskets are an eco-friendly marvel perfected over centuries in Manipur's hill tracts, allowing travelers and farmers to carry water and goods naturally.",
+      "materials": ["Wild Hill Bamboo", "Cane Splints", "Natural Smoke Treatment"],
+      "dimensions": "Haversack: 16 x 10 inches, Bottle: 10 x 3.5 inches"
+    },
+    {
+      "id": "prod-manipur-003",
+      "title": "Maring & Monsang Bamboo Fishing Baskets",
+      "description": "Authentic indigenous Maring and Monsang tribal bamboo fishing traps and storage baskets, intricately hand-plaited for wetland and river fishing across Manipur.",
+      "price": 950,
+      "originalPrice": 1200,
+      "category": "Bamboo Crafts",
+      "images": [
+        "https://imgs.search.brave.com/VhOoNWr43OpcSKHEYvYqS2iCz15RgYLHhDCF7FAnmqI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5kaWFuZXR6b25l/LmNvbS9wdWJsaWMv/YWRtaW4vdXBsb2Fk/SW1hZ2UvMV9NYXJp/bmdfZmlzaGluZ19i/YXNrZXRfTW9uc2Fu/Z19maXNoaW5nX2Jh/c2tldF8yLmpwZw",
+        "/images/products/maring_fishing_basket.jpg",
+        "https://www.indianetzone.com/public/admin/uploadImage/1_Maring_fishing_basket_Monsang_fishing_basket_2.jpg"
+      ],
+      "artisan": {
+        "id": "artisan-013",
+        "name": "Ngamlen Maring",
+        "location": "Chandel",
+        "avatar": "https://randomuser.me/api/portraits/men/33.jpg"
+      },
+      "rating": 4.9,
+      "reviewCount": 41,
+      "inStock": true,
+      "craftStory": "The Maring and Monsang tribes are revered for their ingenious bamboo trap weaving. Designed specifically for Loktak Lake and hill streams, these baskets combine hydrodynamics with beautiful aesthetic symmetry.",
+      "materials": ["River Cane", "Manipur Bamboo", "Smoked Resin Coating"],
+      "dimensions": "Maring Basket: 14 x 11 inches, Monsang Basket: 13 x 9 inches"
+    },
+    {
+      "id": "prod-manipur-004",
+      "title": "Manipuri Kouna Grass Handwoven Picnic Basket",
+      "description": "Handcrafted from indigenous Manipuri water reed (Kouna), this eco-friendly picnic and carrier basket features strong braided handles, durable lock loops, and natural moisture-resistant finish.",
+      "price": 1850,
+      "originalPrice": 2400,
+      "category": "Kouna Crafts",
+      "images": [
+        "https://imgs.search.brave.com/bS-JHozoQrcBwxmQUSP3Tg9jMMM1fls_UmHcyuYcS5k/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly81Lmlt/aW1nLmNvbS9kYXRh/NS9TRUxMRVIvRGVm/YXVsdC8yMDIxLzgv/SEkvRlgvRk8vMTIw/MDExMDUyL2tvdW5h/LWdyYXNzLXBpY25p/Yy1iYXNrZXQtNTAw/eDUwMC5wbmc",
+        "/images/products/kouna_grass_picnic_basket.png",
+        "https://5.imimg.com/data5/SELLER/Default/2021/8/HI/FX/FO/120011052/kouna-grass-picnic-basket-500x500.png"
+      ],
+      "artisan": {
+        "id": "artisan-014",
+        "name": "Sanatombi Devi",
+        "location": "Thoubal",
+        "avatar": "https://randomuser.me/api/portraits/women/34.jpg"
+      },
+      "rating": 4.9,
+      "reviewCount": 64,
+      "inStock": true,
+      "craftStory": "Kouna is an indigenous swamp wetland reed unique to the valleys of Manipur. Artisans harvest, sun-dry, and weave the spongy stems into flexible, shock-absorbent, and biodegradable lifestyle wares.",
+      "materials": ["Natural Kouna Water Reed", "Natural Sun-Dried Fiber", "Eco Polish"],
+      "dimensions": "15 x 9 x 11 inches"
+    },
+    {
+      "id": "prod-manipur-005",
+      "title": "Manipuri Handcrafted Cane & Bamboo Tableware Tray Set",
+      "description": "Set of traditional Manipuri woven bamboo trays, winnowing platters (Yangkok style), and serving bowls handcrafted with seasoned hill bamboo and fine cane splints.",
+      "price": 2100,
+      "originalPrice": 2600,
+      "category": "Bamboo Crafts",
+      "images": [
+        "https://imgs.search.brave.com/6PgBW0_DQBGGZrIO-OvIkB7KnOARhQkvv6VupuTV8t8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LmpkbWFnaWNic/m94LmNvbS9xdWlj/a3F1b3Rlcy9saXN0/aWNsZS9saXN0aWNs/ZV8xNzQ5MjE1NTk5/NTY4XzZvdnFhXzEw/MDB4NjY4LmpwZz9p/bXBvbGljeT1xdWVy/eXBhcmFtJmltPVJl/c2l6ZT0oMzg0MCwy/ODgwKSxhc3BlY3Q9/Zml0JnE9NzUmd2lk/dGg9Mzg0MA",
+        "/images/products/manipur_handicraft_crafts.jpg",
+        "https://content.jdmagicbox.com/quickquotes/listicle/listicle_1749215599568_6ovqa_1000x668.jpg?impolicy=queryparam&im=Resize=(3840,2880),aspect=fit&q=75&width=3840"
+      ],
+      "artisan": {
+        "id": "artisan-015",
+        "name": "Tomba Singh",
+        "location": "Bishnupur",
+        "avatar": "https://randomuser.me/api/portraits/men/35.jpg"
+      },
+      "rating": 4.8,
+      "reviewCount": 37,
+      "inStock": true,
+      "craftStory": "Bamboo craft in Manipur embodies circular harmony with nature. These trays are woven by master craftsmen using indigenous spiral and twill interlacing methods suited for modern dining and home decor.",
+      "materials": ["Manipur Golden Bamboo", "Cane Splints", "Herbal Treatment"],
+      "dimensions": "Platter: 14 inch dia, Bowl: 7 inch dia, Tray: 12 inch dia"
+    },
+    {
+      "id": "prod-manipur-006",
+      "title": "Traditional Floral Embroidered Manipuri Inaphi Shawl",
+      "description": "Exquisite rose-pink Manipuri Inaphi wrap woven with sheer delicacy on fly-shuttle and loin looms, decorated with vibrant multi-colored hand-embroidered floral motifs and temple borders.",
+      "price": 3800,
+      "originalPrice": 4600,
+      "category": "Textiles",
+      "images": [
+        "https://imgs.search.brave.com/66zswdHDSnAetdXU1RRBIpmWlQGfHqcVp-6en8Wj1xg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWdt/ZWRpYS5sYmIuaW4v/MTIyOTExODYyXzcw/NzY1MTU4MzE5NzU2/Nl83MjYzNzg4MzA4/NzYwNTYzODUxX25f/MTYwNDkyNTQzOTk5/OS5qcGc",
+        "/images/products/manipur_handloom_textile.jpg",
+        "https://imgmedia.lbb.in/122911862_707651583197566_7263788308760563851_n_1604925439999.jpg"
+      ],
+      "artisan": {
+        "id": "artisan-016",
+        "name": "Memcha Devi",
+        "location": "Imphal East",
+        "avatar": "https://randomuser.me/api/portraits/women/36.jpg"
+      },
+      "rating": 5.0,
+      "reviewCount": 48,
+      "inStock": true,
+      "craftStory": "Wangkhei Phee and Inaphi are legendary textiles of Manipur, historically woven for royalty. Each floral vine is painstakingly embroidered with fine needlecraft on lightweight gossamer cotton-silk warp.",
+      "materials": ["Cotton-Silk Blend", "Mulberry Silk Yarn", "Natural Dyes"],
+      "dimensions": "2.4 x 1.1 meters"
+    },
+    {
+      "id": "prod-manipur-007",
+      "title": "Handwoven Manipuri Mapan Naibi Phanek (Pink)",
+      "description": "Traditional handwoven Manipuri ethnic Mapan Naibi Phanek featuring signature horizontal striping in pink and black, paired with intricately hand-embroidered circular motif border.",
+      "price": 2950,
+      "originalPrice": 3600,
+      "category": "Textiles",
+      "images": [
+        "https://imgs.search.brave.com/6Eqf_nnp_tzIh358c0ozeNYygH0n5mnVG3-5M6q8B8Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wYWJ1/bmcuY29tL2Nkbi9z/aG9wL2ZpbGVzL21h/cGFuLW5haWJpLS0t/UGlua19kY2QxNGEw/ZC04M2MzLTRhNGYt/YTc2Mi03MWMzZTkx/Y2E3NWIuanBnP3Y9/MTczODE0Mzg3MSZ3/aWR0aD01MzM",
+        "/images/products/mapan_naibi_pink.jpg",
+        "https://pabung.com/cdn/shop/files/mapan-naibi---Pink_dcd14a0d-83c3-4a4f-a762-71c3e91ca75b.jpg?v=1738143871&width=533"
+      ],
+      "artisan": {
+        "id": "artisan-017",
+        "name": "Bembem Devi",
+        "location": "Imphal West",
+        "avatar": "https://randomuser.me/api/portraits/women/37.jpg"
+      },
+      "rating": 4.9,
+      "reviewCount": 59,
+      "inStock": true,
+      "craftStory": "Mapan Naibi is the esteemed traditional attire worn by Meitei women on festivals and ceremonies. The border design is an ode to ancient royal motifs, woven on frame looms with exquisite precision.",
+      "materials": ["Mercerized Cotton", "Gold Lurex Accents", "Hand-stitched Border"],
+      "dimensions": "Length: 1.8 meters, Width: 1.25 meters"
+    },
+    {
       "id": "prod-001",
       "title": "Sohrai Painting - Harvest Festival",
       "description": "Traditional Sohrai wall painting on canvas depicting the harvest festival celebration. Hand-painted by master artist using natural pigments.",
@@ -14,7 +188,7 @@
       "artisan": {
         "id": "artisan-001",
         "name": "Suma Devi",
-        "location": "Hazaribagh",
+        "location": "Imphal West",
         "avatar": "https://randomuser.me/api/portraits/women/21.jpg"
       },
       "rating": 4.9,
@@ -36,7 +210,7 @@
       "artisan": {
         "id": "artisan-002",
         "name": "Mangal Karmakar",
-        "location": "Ranchi",
+        "location": "Imphal East",
         "avatar": "https://randomuser.me/api/portraits/men/22.jpg"
       },
       "rating": 4.8,
@@ -59,13 +233,13 @@
       "artisan": {
         "id": "artisan-003",
         "name": "Lakshmi Weavers Collective",
-        "location": "Giridih",
+        "location": "Bishnupur",
         "avatar": "https://randomuser.me/api/portraits/women/23.jpg"
       },
       "rating": 4.9,
       "reviewCount": 112,
       "inStock": true,
-      "craftStory": "Jharkhand's Tussar silk is known as 'Kosa' and is produced by silkworms feeding on native trees. The golden luster is natural and unique to this region.",
+      "craftStory": "This handwoven silk celebrates Manipur's rich textile heritage. The golden luster and natural dyes give every piece a distinctive local character.",
       "materials": ["Tussar Silk", "Natural Dyes", "Handwoven"],
       "dimensions": "6.5 meters with blouse piece"
     },
@@ -80,14 +254,14 @@
       ],
       "artisan": {
         "id": "artisan-004",
-        "name": "Budhram Munda",
-        "location": "Khunti",
+        "name": "Ibemcha Devi",
+        "location": "Thoubal",
         "avatar": "https://randomuser.me/api/portraits/men/24.jpg"
       },
       "rating": 4.7,
       "reviewCount": 34,
       "inStock": true,
-      "craftStory": "Bamboo weaving is a traditional skill passed down through generations of Munda families. Each basket takes 2-3 days to complete.",
+      "craftStory": "Bamboo weaving is a traditional skill passed down through generations of Manipuri families. Each basket takes 2-3 days to complete.",
       "materials": ["Local Bamboo", "Natural Lacquer"],
       "dimensions": "12 x 10 x 8 inches"
     },
@@ -103,7 +277,7 @@
       "artisan": {
         "id": "artisan-005",
         "name": "Parvati Devi",
-        "location": "Hazaribagh",
+        "location": "Kakching",
         "avatar": "https://randomuser.me/api/portraits/women/25.jpg"
       },
       "rating": 4.8,
@@ -125,7 +299,7 @@
       "artisan": {
         "id": "artisan-006",
         "name": "Shankar Mahato",
-        "location": "Dumka",
+        "location": "Ukhrul",
         "avatar": "https://randomuser.me/api/portraits/men/26.jpg"
       },
       "rating": 4.9,
@@ -148,7 +322,7 @@
       "artisan": {
         "id": "artisan-007",
         "name": "Kali Kumhar",
-        "location": "Gumla",
+        "location": "Churachandpur",
         "avatar": "https://randomuser.me/api/portraits/men/27.jpg"
       },
       "rating": 4.6,
@@ -170,7 +344,7 @@
       "artisan": {
         "id": "artisan-008",
         "name": "Sushila Oraon",
-        "location": "Gumla",
+        "location": "Senapati",
         "avatar": "https://randomuser.me/api/portraits/women/28.jpg"
       },
       "rating": 4.8,
@@ -192,7 +366,7 @@
       "artisan": {
         "id": "artisan-009",
         "name": "Jamuna Devi",
-        "location": "Ranchi",
+        "location": "Imphal",
         "avatar": "https://randomuser.me/api/portraits/women/29.jpg"
       },
       "rating": 4.5,
@@ -214,7 +388,7 @@
       "artisan": {
         "id": "artisan-010",
         "name": "Soren Tudu",
-        "location": "Dumka",
+        "location": "Tamenglong",
         "avatar": "https://randomuser.me/api/portraits/men/30.jpg"
       },
       "rating": 4.9,
@@ -226,9 +400,9 @@
     }
   ],
   "meta": {
-    "total": 10,
+    "total": 13,
     "page": 1,
-    "limit": 10,
+    "limit": 13,
     "totalPages": 1
   }
 }
